@@ -36,3 +36,8 @@ show databases;
 -- delete from mysql.user where User ='number'; 사용자와 관련된 모든 정보 삭제
 -- delete from mysql.db where User ='number'; 사용자가 접근할 수 있는 데이터베이스 권한 삭제
 -- flush privileges; 변경된 권한 설정 즉시 적용
+
+use mysql;
+create user 'phone_book'@'%' identified by 'phone_book';
+create database phone_book;
+grant all privileges on phone_book. * to 'phone_book'@'%';
