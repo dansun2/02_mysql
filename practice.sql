@@ -211,3 +211,5 @@ select
  having count(menu_name);
 
 
+select ascii('A');
+
